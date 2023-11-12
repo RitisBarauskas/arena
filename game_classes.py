@@ -17,6 +17,13 @@ class Person:
     health: int
     default_attack: int
     defense_percentage: int
+    
+    def set_things(things):
+        """Принимает список вещей."""
+
+    def attack_damage():
+        """Вычитает жизни на основе атаки."""
+        pass
 
 
 @dataclass
