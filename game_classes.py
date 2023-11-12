@@ -20,6 +20,9 @@ class Person:
     
     def set_things(self, things):
         """Принимает список вещей."""
+        for thing in things:
+            self._count_buff(**asdict(thing))
+        pass
 
     def attack_damage(self):
         """Вычитает жизни на основе атаки."""
