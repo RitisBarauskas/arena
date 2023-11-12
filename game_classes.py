@@ -18,8 +18,11 @@ class Person:
     default_attack: int
     defense_percentage: int
     
-    def set_things(things):
+       def set_things(things):
         """Принимает список вещей."""
+        for thing in things:
+            self._count_buff(**asdict(thing))
+        pass
 
     def attack_damage():
         """Вычитает жизни на основе атаки."""
