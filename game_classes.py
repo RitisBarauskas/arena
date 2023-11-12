@@ -16,7 +16,11 @@ class Person:
     Создает персонажа.
 
     """
+
+    name: str
     health: int
+    default_attack: int
+    default_deffent: int
 
 
 @dataclass
@@ -24,8 +28,10 @@ class Paladin(Person):
     """Создает персонажа типа: Plaldin"""
     ...
 
+
 @dataclass
 class Warrior(Person):
     """Создает персонажа типа: Warrior"""
     ...
+
 
