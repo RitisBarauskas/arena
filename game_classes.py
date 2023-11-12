@@ -5,7 +5,7 @@ from dataclasses import dataclass
 class Thing:
     """Создает объект инвентаря."""
     title: str
-    defense_percentage: int
+    defense_percentage: float
     attack: int
     health_point: int
 
@@ -16,7 +16,7 @@ class Person:
     name: str
     health: int
     default_attack: int
-    defense_percentage: int
+    defense_percentage: float
 
 
 @dataclass
