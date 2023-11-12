@@ -11,6 +11,15 @@ class Thing:
 
 
 @dataclass
+class Thing:
+    """Создает объект инвентаря."""
+    title: str
+    defense_percentage: int
+    attack: int
+    health_point: int
+
+
+@dataclass
 class Person:
     """Создает базовый объект персонажа."""
     name: str
