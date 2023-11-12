@@ -20,14 +20,28 @@ class Thing:
 
 
 @dataclass
+class Thing:
+    """Создает объект инвентаря."""
+    title: str
+    defense_percentage: int
+    attack: int
+    health_point: int
+
+
+@dataclass
 class Person:
     """Создает базовый объект персонажа."""
     name: str
     health: int
     default_attack: int
     defense_percentage: int
+<<<<<<< HEAD
 
     def set_things(things):
+=======
+    
+       def set_things(things):
+>>>>>>> 714f80adfb505a0885ac929d8263472864537e43
         """Принимает список вещей."""
         for thing in things:
             self._count_buff(**asdict(thing))
